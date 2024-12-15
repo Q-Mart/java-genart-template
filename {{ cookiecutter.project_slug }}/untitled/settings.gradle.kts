@@ -1,2 +1,2 @@
-rootProject.name = "untitled"
+rootProject.name = "{{ cookiecutter.project_slug }}"
 
