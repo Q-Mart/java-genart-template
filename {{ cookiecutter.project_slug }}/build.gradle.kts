@@ -26,6 +26,9 @@ dependencies {
 
     // Arg parsing
     implementation("commons-cli:commons-cli:1.9.0")
+
+    // qlib
+    implementation("com.github.q-mart:qlib:main-SNAPSHOT")
 }
 
 tasks.test {
