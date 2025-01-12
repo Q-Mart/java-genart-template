@@ -3,8 +3,12 @@ package org.example;
 import org.apache.commons.cli.*;
 import processing.core.PApplet;
 
+import java.util.Random;
+
 public class Main extends PApplet {
     private long randomSeed = System.currentTimeMillis() / 1000;
+
+    private Random r = new Random(randomSeed);
 
     public void settings() {
         Options options = new Options();
@@ -36,9 +40,23 @@ public class Main extends PApplet {
         }
     }
 
+    public void setup() {
+        // Change to HSB colours
+        colorMode(HSB, 360, 100, 100);
+
+        // Only draw once
+        noLoop();
+
+        // Don't leave an outline when creating shapes
+        noStroke();
+    }
+
     public void draw(){
         background(64);
         ellipse(250, 250, 20, 20);
+
+        // Save output
+        save("../outputs/"+randomSeed+".tiff");
     }
 
     public static void main(String[] args) {
