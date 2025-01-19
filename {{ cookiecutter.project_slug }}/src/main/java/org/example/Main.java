@@ -32,7 +32,6 @@ public class Main extends PApplet {
             }
 
             noiseSeed(randomSeed);
-            size(1024, 768);
         } catch (ParseException e) {
             System.out.println(e.getMessage());
             formatter.printHelp("utility-name", options);
@@ -49,6 +48,10 @@ public class Main extends PApplet {
 
         // Don't leave an outline when creating shapes
         noStroke();
+
+        // Set size and HiDPI pixel density
+        size(1024, 768);
+        pixelDensity(2);
     }
 
     public void draw(){
