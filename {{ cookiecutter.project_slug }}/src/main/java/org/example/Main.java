@@ -51,7 +51,7 @@ public class Main extends PApplet {
 
         // Set size and HiDPI pixel density
         size(1024, 768);
-        pixelDensity(2);
+        pixelDensity(displayDensity());
     }
 
     public void draw(){
