@@ -22,7 +22,7 @@ dependencies {
     implementation("com.github.micycle1:processing-core-4:4.3.3")
 
     // Guava
-    implementation("com.google.guava:guava:33.3.1-jre")
+    implementation("com.google.guava:guava:33.4.8-jre")
 
     // Arg parsing
     implementation("commons-cli:commons-cli:1.9.0")
